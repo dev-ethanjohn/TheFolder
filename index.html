@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Folder</title>
+
+        <!-- Custom CSS Link -->
+        <link rel="stylesheet" href="./styles.css">
+
+        <!-- Bootstrap Link -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- Bootstrap Icon -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> -->
+
+        <!-- Google Font Link -->
+        <!-- Logo 'Orbitron' | Nav-list + headings 'Space Mono' | p's 'Space Grotesk' | -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Space+Grotesk&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    </head>
+
+    <body>
+<!-- HEADER START-->
+            <!-- start-0 | top-0 | end-0  -> farthest left to right making 2 columns at the very top row (1st row)-->
+        <header class="header start-0 top-0 end-0">
+            <div class="d-flex justify-content-between align-items-center">
+                                                 <!-- HEADER logo (CUSTOM) -->
+                    <a href="/" class="text-decoration-none logo">The Folder</a>
+                                                    <!-- HEADER Open Button (CUSTOM) -->
+                    <button class="navbar-toggler  menu_navBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                    </button>
+
+                    <!-- menu items CONTAINER -->
+                    <nav class="navbar navbar-expand-lg header_menuItems">
+                        <!-- <div class="collapse navbar-collapse custom-nav-bar" id="navbarNav"> -->
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#landing">Home<span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tools">Tools</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        <!-- </div> -->
+                    </nav>                 
+            </div>
+        </header>
+<!-- HEADER END -->
+        
+<!-- NAV  START-->
+        <nav id="navbar" class="collapse navbar-collapse dropdown-nav">
+            <!-- NAV Links -->
+            <div class="container-fluid">
+                <div class="row align-items-start nav-close-links">
+                    <div class="col-12 col-sm-4">
+                        <a href="#" class="row text-decoration-none">                   
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#landing">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Tools</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Contact</a>
+                                </li>
+                            </ul>
+                        </a>
+                </div>   
+                    
+                </div>
+                                        <!-- NAV close_navBtn (CUSTOM) -->
+                <button class="navbar-toggler close_navBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+<!-- NAV END-->
+
+<!-- LANDING MAIN START-->
+        <main id="landing">
+            <div class="landing_overlay"></div>
+            <!-- LANDING background image -->
+            <img src="./images/background-image.png" alt="" class="landing_background">
+            <!-- Qualities SECTION-->
+            <section class="landing_qualities">
+                <div class="flex_qualities_container">
+                        <!-- Q-1 -->                      
+                        <div class="qualities">                
+                            <img src="./images/technical-skills-icon.png" class="qualities-image" alt="strong technical skills icon">                 
+                            <h5>Technically Adept</h5>
+                        </div>
+                        <!-- Q-2 -->
+                        <div class="qualities">
+                            <img src="./images/focused-icon.png" alt="focused icon" class="qualities-image">                  
+                            <h5>Focused</h5>
+                        </div>                 
+                        <!-- Q-3 -->                  
+                        <div class="qualities">
+                            <img src="./images/continuous-learning-and-adaptable-icon.png" alt="open for leaning and adaptability icon" class="qualities-image">                  
+                            <h5>Adaptable</h5>
+                        </div>
+                        <!-- Q-4 -->
+                        <div class=" qualities">
+                            <img src="./images/problem-solving-icon.png" alt="good problem solving skills icon" class="qualities-image">  
+                            <!-- <div class="qualities_text_container">                -->
+                                <h5>Solution Driven</h5>
+                            <!-- </div>    -->
+                        </div>                   
+                </div>
+            </section>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Intro SECTION-->
+            <div class="landing_intro">
+                <div class="flex_introduction_container">                   
+                        <div class="intro-heading">
+                            <h1 class="welcome">Hi! I'm <span id="dev-name">Ethan</span> <span id="welcome-note">Welcome to my folder!</span></h1>
+                            <p>
+                                <strong class="full-stack">Full Stack Web Developer</strong>
+                            </p>
+                        </div>                       
+                        <div class="intro-text">
+                            <!-- Introductory -->
+                            <p> As a seasoned web developer, I fuse creativity with technical skill to bring digital visions to reality. Specializing in user-friendly, responsive design, I create cutting-edge websites that captivate. Let's collaborate and <strong>bring your online presence to <span class="life"><em>life.</em></span> </strong></p>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <!-- LANDING MAIN END-->
+
+        <!-- PROJECTS -->
+        <!-- Grid layout -->
+        <section id="projects">
+            <div class="projects_container">
+                <h2 class="text-center mt-5">Projects</h2>
+                <div class="projects_gallery">
+                    <div class="projects_item">
+                        <img src="./projects_images/Betterment-personalFinance.jpg" alt="">
+                        <div class="caption">
+                            <h5><a href="javascript:void(0)">Betterment Personal Finance</a></h5>
+                            <p>An all-in-one financial empowerment app.</p>
+                        </div>
+                    </div>
+                    <div class="projects_item">
+                        <img src="./projects_images/note-taking.jpg" alt="">
+                        <div class="caption">
+                            <h5><a href="javascript:void(0)">E-notes</a></h5>
+                            <p>Your digital notebook for organized ideas and notes on the go.</p>
+                        </div>
+                    </div>
+                    <div class="projects_item">
+                        <img src="./projects_images/prompt_hero.jpg" alt="">
+                        <div class="caption">
+                            <h5><a href="javascript:void(0)">Prompt Hero</a></h5>
+                            <p>The Hero that Unleashes your creativity with AI-powered writing prompts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        
+        <!-- TOOLS -->
+        <div class="row flex-column tools_container" id="tools">
+    
+            <h2 class="my-1 text-center" >Tools</h2>
+            <div class="row justify-content-center p-0">
+                <div class="col-md-3 col-lg-2 mx-4 my-3">
+                    <h3 class="my-3 text-center">Front End</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-6 center">
+                            <img src="./tools_images/html5.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 center">
+                            <img src="./tools_images/css3.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 center">
+                            <img src="./tools_images/js.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 center">
+                            <img src="./tools_images/bs.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2 mx-4 my-3">
+                    <h3 class="my-3 text-center">MERN</h3>
+                    <div class="row">
+                        <div class="col-6 center">
+                            <img src="./tools_images/mongodb.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 center">
+                            <img src="./tools_images/ejs.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 center">
+                            <img src="./tools_images/react.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 center">
+                            <img src="./tools_images/nodejs.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2 mx-4 my-3">
+                    <h3 class="my-3 text-center">Other Tools</h3>
+                    <div class="row">
+                        <div class="col-6 center">
+                            <img src="./tools_images/heroku.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 center">
+                            <img src="./tools_images/git.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 center">
+                            <img src="./tools_images/postman.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 center">
+                            <img src="./tools_images/sublime-text-3.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TOOLS -->
+
+      
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container pb-5 contact_container">
+                <div class="contact_row">
+                    <div class="developer_info">
+                            <h2 class="contact_me_title">Contact Me</h2>
+                            <div class="contact_info">
+                                <p>0344365257</p>
+                                <p>09664487316</p>
+                            </div>        
+                        <div class="soc_icons">
+                            <a href="./projects_images/prompt_hero.jpg"><i class="fab fa-facebook"></i></a>
+                            <a href="./projects_images/prompt_hero.jpg"><i class="fab fa-instagram"></i></a>
+                            <a href="./projects_images/prompt_hero.jpg"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="form_corner">
+                        <form action="https://google.com" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject">
+            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+            
+                            <button type="submit" class="sub_btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+
+        <footer class="mt-1 p-3 text-dark" id="footer">
+            <h6 class="text-center">Ethan John Paguntalan</h6>
+            <p class="text-center mb-1">Full Stack Web Developer</p>
+            <p class="text-center">&copy; All Rights Reserved 2021</p>
+        </footer>
+
+        <!-- Bootstrap Script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      </body>
+   
+</html>
